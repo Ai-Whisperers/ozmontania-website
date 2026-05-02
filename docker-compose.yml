@@ -11,9 +11,6 @@ services:
       replicas: 2
       resources:
         limits:
-          memory: 1G
-          cpus: '2.0'
-        reservations:
           memory: 256M
           cpus: '0.5'
       labels:

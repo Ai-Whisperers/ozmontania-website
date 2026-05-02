@@ -135,7 +135,7 @@
       { "year": "2002", "event": "First formal mural", "detail": "Paints his first mural at 17. Leaves home and becomes self-sufficient." },
       { "year": "2002-2008", "event": "Studies Graphic Design", "detail": "Attends Graphic Design at Universidad Católica de Asunción. Works by day as editorial illustrator, graphic creative and art director." },
       { "year": "2009", "event": "International breakthrough", "detail": "Travels to Buenos Aires and paints with Argentine artist Ice at the Sinvergüenzas show at the Spain Cultural Center. A turning point in his technique." },
-      { "year": "2010", "event": "Founds Ocho Estudio", "detail": "Creates Ocho Estudio, his design and art production studio, coordinating large-format murals and commercial projects." },
+      { "year": "2010", "event": "Founds Estudio 8", "detail": "Creates Estudio 8, his design and art production studio, coordinating large-format murals and commercial projects." },
       { "year": "2014", "event": "Opens Powerline Shop", "detail": "Paraguay's first specialized graffiti and urban art supply store. A milestone for the local scene which previously lacked access to materials." },
       { "year": "2023", "event": "Dead Sea Mural", "detail": "Travels to the West Bank invited by Artists 4 Israel to paint a mural about the Dead Sea's disappearance. A dynamic map showing the retreat of the saltiest sea on Earth." },
       { "year": "2024", "event": "Ghost Organ", "detail": "Solo exhibition at Arte Actual gallery in Asunción. Also designs the limited edition Nescafé cans." },
@@ -301,7 +301,7 @@
       "proyectos": {
         "title": "Projects",
         "items": [
-          { "label": "Ocho Estudio", "url": "#" },
+          { "label": "Estudio 8", "url": "#" },
           { "label": "Powerline Shop", "url": "#" }
         ]
       },

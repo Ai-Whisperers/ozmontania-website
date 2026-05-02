@@ -135,7 +135,7 @@
       { "year": "2002", "event": "Primer mural formal", "detail": "A los 17 años pinta su primer mural. Sale de su casa y empieza a autosustentarse." },
       { "year": "2002-2008", "event": "Estudia Diseño Gráfico", "detail": "Cursa Diseño Gráfico en la Universidad Católica de Asunción. Trabaja de día como ilustrador editorial, creativo gráfico y director de arte. 'Yo quería estudiar Artes Visuales, pero necesitaba un oficio pragmático'." },
       { "year": "2009", "event": "Irrupción internacional", "detail": "Viaja a Buenos Aires e invita al artista Ice a pintar juntos en la muestra Sinvergüenzas del Centro Cultural de España. Este encuentro marca un antes y después en su técnica." },
-      { "year": "2010", "event": "Funda Ocho Estudio", "detail": "Crea Ocho Estudio, su estudio de diseño y producción artística, desde donde coordina murales de gran formato y proyectos comerciales." },
+      { "year": "2010", "event": "Funda Estudio 8", "detail": "Crea Estudio 8, su estudio de diseño y producción artística, desde donde coordina murales de gran formato y proyectos comerciales." },
       { "year": "2014", "event": "Abre Powerline Shop", "detail": "Primera tienda especializada en graffiti y arte urbano de Paraguay. Un hito para la escena local que hasta entonces carecía de acceso a materiales." },
       { "year": "2023", "event": "Mural del Mar Muerto", "detail": "Viaja a Cisjordania invitado por Artists 4 Israel para pintar un mural sobre la desaparición del Mar Muerto. Un mapa dinámico que muestra el retroceso del mar más salado del planeta." },
       { "year": "2024", "event": "Órgano Fantasma", "detail": "Expone individualmente en la galería Arte Actual de Asunción. Una serie de piezas plásticas que exploran sensaciones abstractas. También diseña las latas edición limitada de Nescafé." },
@@ -301,7 +301,7 @@
       "proyectos": {
         "title": "Proyectos",
         "items": [
-          { "label": "Ocho Estudio", "url": "#" },
+          { "label": "Estudio 8", "url": "#" },
           { "label": "Powerline Shop", "url": "#" }
         ]
       },
