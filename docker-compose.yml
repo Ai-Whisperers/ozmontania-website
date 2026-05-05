@@ -1,32 +1,38 @@
 services:
   web:
     build: .
-    image: ozmontania:prod
+    image: ozmontania-website:prod
     ports:
       - "3000"
     networks:
       - agent-net
+    environment:
+      - NODE_ENV=production
     deploy:
       mode: replicated
       replicas: 2
       resources:
         limits:
-          memory: 256M
           cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.1'
+          memory: 128M
       labels:
         - "traefik.enable=true"
+        - "traefik.docker.network=agent-net"
         - "traefik.http.routers.ozmontania.entrypoints=websecure"
         - "traefik.http.routers.ozmontania.rule=Host(`ozmontania.paragu-ai.com`)"
         - "traefik.http.routers.ozmontania.tls=true"
         - "traefik.http.routers.ozmontania.tls.certresolver=letsencryptresolver"
         - "traefik.http.services.ozmontania.loadbalancer.server.port=3000"
-        - "traefik.docker.network=agent-net"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 15s
+
 networks:
   agent-net:
     external: true
