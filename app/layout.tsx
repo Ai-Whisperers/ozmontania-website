@@ -4,6 +4,10 @@ import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import WhatsAppFloat from '@/components/whatsapp-float'
+import es from '@/content/es.json'
+import type { SiteContent } from '@/types/content'
+
+const content = es as unknown as SiteContent
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,13 +20,13 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Oz Montanía — Artista visual paraguayo',
-  description: 'Oz Montanía (Oscar Montanía Villar) — Artista visual, muralista e ilustrador paraguayo. Más de 20 años transformando muros en historias.',
+  title: content.site.title + ' — ' + content.site.description,
+  description: content.hero.description,
   openGraph: {
-    title: 'Oz Montanía',
-    description: 'Artista visual, muralista e ilustrador paraguayo',
-    url: 'https://ozmontania.paragu-ai.com',
-    siteName: 'Oz Montanía',
+    title: content.site.title,
+    description: content.site.description,
+    url: content.site.url,
+    siteName: content.site.title,
     locale: 'es_PY',
     type: 'website',
   },

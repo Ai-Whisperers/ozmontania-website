@@ -153,6 +153,30 @@
       "text": "Oz believes art must take a stand on human rights and environmental issues, represent those historically without a voice, and be built from the honesty of craft rather than market labels."
     }
   },
+  "testimonios": {
+    "title": "What clients say",
+    "description": "Publishers, authors and brands who have trusted my work",
+    "items": [
+      {
+        "text": "Working with Oz was a transformative experience. His ability to capture the essence of our project in a 30-meter mural is impressive.",
+        "author": "Laura Mandelik",
+        "role": "Art curator",
+        "project": "Raíz y Barrio"
+      },
+      {
+        "text": "Oz understands urban art like few others. His Dead Sea mural is not only visually striking, but communicates an urgent environmental message.",
+        "author": "Artists 4 Israel",
+        "role": "Organization",
+        "project": "Dead Sea Mural"
+      },
+      {
+        "text": "The limited edition cans he designed for us were a total success. His style perfectly connects with Paraguayan culture.",
+        "author": "Nescafé Paraguay",
+        "role": "Brand",
+        "project": "Limited Edition Cans"
+      }
+    ]
+  },
   "prensa": {
     "title": "Press",
     "description": "Articles, interviews and media coverage",

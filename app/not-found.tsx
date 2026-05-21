@@ -1,28 +1,19 @@
 import Link from 'next/link'
-import { getContentSync } from '@/lib/content'
+import es from '@/content/es.json'
+import type { SiteContent } from '@/types/content'
 
-const content = getContentSync()
+const content = es as unknown as SiteContent
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <section className="min-h-[70vh] flex items-center justify-center">
       <div className="text-center px-6">
-        <div className="text-8xl mb-6">🎨</div>
-        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">
-          {content.not_found.title}
-        </h1>
-        <p className="text-xl text-zinc-400 mb-8 font-serif italic">
-          &ldquo;{content.not_found.message}&rdquo;
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/" className="btn-primary">
-            {content.not_found.cta}
-          </Link>
-          <Link href="/murales" className="btn-outline">
-            {content.not_found.subtext}
-          </Link>
-        </div>
+        <div className="text-5xl sm:text-7xl font-serif font-bold text-amber-500 mb-4 sm:mb-6">404</div>
+        <h1 className="text-xl sm:text-3xl font-serif font-bold mb-3 sm:mb-4">{content.not_found.title}</h1>
+        <p className="text-zinc-400 text-sm sm:text-base mb-2">{content.not_found.message}</p>
+        <p className="text-zinc-600 text-xs sm:text-sm mb-6 sm:mb-8">{content.not_found.subtext}</p>
+        <Link href="/" className="btn-primary text-sm sm:text-base">{content.not_found.cta}</Link>
       </div>
-    </div>
+    </section>
   )
 }

@@ -4,13 +4,17 @@ import Link from 'next/link'
 import es from '@/content/es.json'
 import { useParams } from 'next/navigation'
 import { getWhatsAppUrl } from '@/lib/whatsapp'
-import { useState } from 'react'
+import type { SiteContent, ObraItem } from '@/types/content'
+import ImageGallery from '@/components/image-gallery'
+import Reveal from '@/components/reveal'
+
+const content = es as unknown as SiteContent
 
 export default function ObraDetailPage() {
   const params = useParams()
   const slug = params.slug as string
-  const items = es.obra.items as any[]
-  const obra = items.find((i: any) => i.id === slug)
+  const items = content.obra.items as ObraItem[]
+  const obra = items.find((i: ObraItem) => i.id === slug)
 
   if (!obra) {
     return (
@@ -23,10 +27,15 @@ export default function ObraDetailPage() {
     )
   }
 
-  const [imageIndex, setImageIndex] = useState(0)
-  const hasPrints = obra.has_print
-  const waMessage = `Hola Oz! Me interesa "${obra.title}" — ¿tenés prints disponibles?`
+  const waMessage = obra.has_print
+    ? `Hola Oz! Me interesa "${obra.title}" — ¿tenés prints disponibles?`
+    : `Hola Oz! Me interesa "${obra.title}" — ¿me podés contar más?`
   const whatsappUrl = getWhatsAppUrl(waMessage)
+
+  const galleryImages = obra.images.map((src, i) => ({
+    src,
+    alt: `${obra.title} — imagen ${i + 1}`,
+  }))
 
   return (
     <>
@@ -42,59 +51,51 @@ export default function ObraDetailPage() {
       <section className="pb-16 sm:pb-24">
         <div className="container-art">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
-            {/* Image */}
-            <div>
-              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-800/50 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-zinc-600">
-                  <div className="text-center p-6 sm:p-8">
-                    <svg className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm">Imagen de {obra.title}</p>
-                    <p className="text-xs mt-2 text-zinc-700">(Agregar foto real)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Gallery */}
+            <Reveal variant="left">
+              <ImageGallery images={galleryImages} title={obra.title} />
+            </Reveal>
 
             {/* Info */}
-            <div className="px-4 sm:px-0">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] sm:text-xs font-semibold rounded-full">
-                  {obra.category}
-                </span>
-                <span className="text-zinc-500 text-xs sm:text-sm">{obra.year}</span>
+            <Reveal variant="right" delay={150}>
+              <div className="px-4 sm:px-0">
+                <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <span className="px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] sm:text-xs font-semibold rounded-full">
+                    {obra.category}
+                  </span>
+                  <span className="text-zinc-500 text-xs sm:text-sm">{obra.year}</span>
+                </div>
+
+                <h1 className="text-2xl sm:text-4xl md:text-5xl font-serif font-bold mb-4 sm:mb-6">{obra.title}</h1>
+
+                <div className="space-y-2 sm:space-y-3 text-zinc-400 mb-6 sm:mb-8 text-xs sm:text-sm">
+                  {obra.location && (
+                    <p><span className="text-zinc-500 font-medium">Ubicación: </span>{obra.location}</p>
+                  )}
+                  {obra.technique && (
+                    <p><span className="text-zinc-500 font-medium">Técnica: </span>{obra.technique}</p>
+                  )}
+                  {obra.dimensions && (
+                    <p><span className="text-zinc-500 font-medium">Dimensiones: </span>{obra.dimensions}</p>
+                  )}
+                </div>
+
+                <p className="text-zinc-300 leading-relaxed mb-8 sm:mb-10 text-sm sm:text-base">
+                  {obra.description}
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                  {obra.has_print && (
+                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm sm:text-base justify-center">
+                      Comprar print — ${obra.print_price} USD
+                    </a>
+                  )}
+                  <Link href="/contacto" className="btn-outline text-sm sm:text-base justify-center">
+                    Solicitar obra similar
+                  </Link>
+                </div>
               </div>
-
-              <h1 className="text-2xl sm:text-4xl md:text-5xl font-serif font-bold mb-4 sm:mb-6">{obra.title}</h1>
-
-              <div className="space-y-2 sm:space-y-3 text-zinc-400 mb-6 sm:mb-8 text-xs sm:text-sm">
-                {obra.location && (
-                  <p><span className="text-zinc-500 font-medium">Ubicación: </span>{obra.location}</p>
-                )}
-                {obra.technique && (
-                  <p><span className="text-zinc-500 font-medium">Técnica: </span>{obra.technique}</p>
-                )}
-                {obra.dimensions && (
-                  <p><span className="text-zinc-500 font-medium">Dimensiones: </span>{obra.dimensions}</p>
-                )}
-              </div>
-
-              <p className="text-zinc-300 leading-relaxed mb-8 sm:mb-10 text-sm sm:text-base">
-                {obra.description}
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3">
-                {hasPrints && (
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm sm:text-base justify-center">
-                    Comprar print — ${obra.print_price} USD
-                  </a>
-                )}
-                <Link href="/contacto" className="btn-outline text-sm sm:text-base justify-center">
-                  Solicitar obra similar
-                </Link>
-              </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>

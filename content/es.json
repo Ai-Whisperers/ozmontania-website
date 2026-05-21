@@ -153,6 +153,30 @@
       "text": "Oz cree que el arte debe tomar posición sobre derechos humanos y temas ambientales, representar a quienes históricamente no han tenido voz, y construirse desde la honestidad del oficio más que desde las etiquetas del mercado."
     }
   },
+  "testimonios": {
+    "title": "Lo que dicen mis clientes",
+    "description": "Editoriales, autores y marcas que han confiado en mi trabajo",
+    "items": [
+      {
+        "text": "Trabajar con Oz fue una experiencia transformadora. Su capacidad para capturar la esencia de nuestro proyecto en un mural de 30 metros es impresionante.",
+        "author": "Laura Mandelik",
+        "role": "Curadora de arte",
+        "project": "Raíz y Barrio"
+      },
+      {
+        "text": "Oz entiende el arte urbano como pocos. Su mural del Mar Muerto no solo es visualmente impactante, sino que comunica un mensaje ambiental urgente.",
+        "author": "Artists 4 Israel",
+        "role": "Organización",
+        "project": "Mural del Mar Muerto"
+      },
+      {
+        "text": "Las latas de edición limitada que diseñó para nosotros fueron un éxito total. Su estilo conecta perfectamente con la cultura paraguaya.",
+        "author": "Nescafé Paraguay",
+        "role": "Marca",
+        "project": "Latas Edición Limitada"
+      }
+    ]
+  },
   "prensa": {
     "title": "Prensa",
     "description": "Artículos, entrevistas y cobertura mediática",
