@@ -10,6 +10,7 @@ const baseUrl = esContent.site.url
 const staticPages = [
   { url: '', priority: 1.0 },
   { url: '/obra', priority: 0.9 },
+  { url: '/galeria', priority: 0.9 },
   { url: '/murales', priority: 0.8 },
   { url: '/biografia', priority: 0.7 },
   { url: '/prensa', priority: 0.6 },

@@ -6,6 +6,7 @@ import es from '@/content/es.json'
 
 const navItems = [
   { href: '/', label: es.nav.obra },
+  { href: '/galeria', label: 'Galería' },
   { href: '/murales', label: es.nav.murales },
   { href: '/biografia', label: es.nav.biografia },
   { href: '/prensa', label: es.nav.prensa },

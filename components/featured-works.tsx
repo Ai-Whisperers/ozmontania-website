@@ -114,7 +114,7 @@ export default function FeaturedWorks() {
 
         <Reveal variant="up" delay={300}>
           <div className="text-center mt-6 sm:mt-8">
-            <Link href="/obra" className="btn-outline text-sm sm:text-base">
+            <Link href="/galeria" className="btn-outline text-sm sm:text-base">
               Ver todas las obras →
             </Link>
           </div>

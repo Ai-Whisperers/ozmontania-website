@@ -37,7 +37,7 @@ export default function HomePage() {
                   </svg>
                   {content.hero.cta_secondary}
                 </Link>
-                <Link href="/obra" className="btn-outline text-sm sm:text-base justify-center">
+                <Link href="/galeria" className="btn-outline text-sm sm:text-base justify-center">
                   {content.hero.cta_primary} →
                 </Link>
               </div>
