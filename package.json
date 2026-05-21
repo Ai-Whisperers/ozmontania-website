@@ -1,6 +1,6 @@
 {
   "name": "ozmontania-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,53 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@types/leaflet": "^1.9.21",
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "tailwind-merge": "^3.5.0",
-    "@ai-whisperers/product": "^0.1.0",
-    "@ai-whisperers/checkout": "^0.1.0",
-    "@ai-whisperers/catalog": "^0.1.0",
-    "@ai-whisperers/ui-extras": "^0.1.0",
-    "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0",
-    "@ai-whisperers/admin": "^0.1.0",
-    "@ai-whisperers/auth": "^0.1.0",
-    "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/commerce": "^0.1.0",
-    "@ai-whisperers/i18n": "^0.1.0",
-    "@ai-whisperers/seo": "^0.1.0",
-    "@ai-whisperers/theme": "^0.1.0",
-    "@ai-whisperers/ui": "^0.1.0",
-    "@ai-whisperers/whatsapp": "^0.1.0"
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "@ai-whisperers/product": "^0.1.0",
-    "@ai-whisperers/checkout": "^0.1.0",
-    "@ai-whisperers/catalog": "^0.1.0",
-    "@ai-whisperers/ui-extras": "^0.1.0",
-    "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0",
-    "@ai-whisperers/admin": "^0.1.0",
-    "@ai-whisperers/auth": "^0.1.0",
-    "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/commerce": "^0.1.0",
-    "@ai-whisperers/i18n": "^0.1.0",
-    "@ai-whisperers/seo": "^0.1.0",
-    "@ai-whisperers/theme": "^0.1.0",
-    "@ai-whisperers/ui": "^0.1.0",
-    "@ai-whisperers/whatsapp": "^0.1.0"
+    "typescript": "^5"
   }
 }
