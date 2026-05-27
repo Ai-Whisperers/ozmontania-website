@@ -3,7 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { Header } from "@ai-whisperers/ui-extras/header"
 import { Footer } from "@ai-whisperers/ui-extras/footer"
-import { WhatsAppFloat } from "@ai-whisperers/whatsapp/whatsapp-float"
+import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
 import es from '@/content/es.json'
 import type { SiteContent } from '@/types/content'
 
