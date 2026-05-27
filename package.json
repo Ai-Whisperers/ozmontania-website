@@ -9,12 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-whisperers/ui": "^0.4.0",
+    "@ai-whisperers/theme": "^0.2.0",
+    "@ai-whisperers/auth": "^0.2.0",
+    "@ai-whisperers/seo": "^0.2.0",
+    "@ai-whisperers/i18n": "^0.2.0",
+    "@ai-whisperers/whatsapp": "^0.2.0",
+    "@ai-whisperers/ui-extras": "^0.2.0",
+    "@ai-whisperers/sections": "^0.1.0",
+    "@ai-whisperers/content": "^0.1.0",
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
-    "lucide-react": "^1.14.0",
-    "next": "16.2.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "lucide-react": "^0.510.0",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
