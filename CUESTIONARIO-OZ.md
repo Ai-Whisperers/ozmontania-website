@@ -74,7 +74,7 @@ Para CADA obra en el sitio necesitamos al menos 1-2 fotos de alta calidad:
 - [ ] Link a Google Drive / Dropbox
 - [ ] Las subo directo al repo
 - [ ) Instagram (@ozmontania / @ocho.estudio) — yo las descargo
-- [ ] WhatsApp / WeTransfer
+- [ ] Messaging / WeTransfer
 
 ---
 
@@ -124,7 +124,7 @@ Usamos Inter (sans) para textos y Playfair Display (serif) para títulos.
 - [ ] ¿Estudio 8 tiene su propio logo/marca?
 - [ ] Descripción de servicios: ¿muralismo, diseño, gestión cultural, algo más?
 - [ ] ¿Presupuesto mínimo / cómo trabajan?
-- [ ] ¿WhatsApp/email separado para Estudio 8?
+- [ ] ¿Messaging/email separado para Estudio 8?
 
 ### 3.2 Powerline Shop
 - [ ] ¿Querés incluir Powerline Shop en el sitio?
@@ -191,7 +191,7 @@ Del PDF: Juan Valdez, Petrobras, Starbucks, Casa Rica, Nestlé, Adidas, Tigo, UN
 - [ ] ¿Hay stock real o es bajo pedido?
 
 ### 4.3 Pagos
-- [ ] ¿Solo WhatsApp para comprar? ¿O querés agregar Stripe/PayPal?
+- [ ] ¿Solo Messaging para comprar? ¿O querés agregar Stripe/PayPal?
 - [ ] ¿Transferencia / depósito bancario?
 - [ ] ¿Bancard / Pagopar para Paraguay?
 
@@ -228,10 +228,10 @@ Actualmente 3 posts (placeholder). ¿Te interesa tener blog?
 
 ---
 
-## 📞 8. CONTACTO Y WHATSAPP
+## 📞 8. CONTACTO Y MESSAGING
 
-### 8.1 Número de WhatsApp
-- [ ] ¿Cuál es el número REAL de WhatsApp para el sitio?
+### 8.1 Número de Messaging
+- [ ] ¿Cuál es el número REAL de Messaging para el sitio?
 - [ ] ¿Es el mismo para consultas comerciales y tienda?
 - [ ] ¿O números separados?
 
@@ -240,7 +240,7 @@ Actualmente 3 posts (placeholder). ¿Te interesa tener blog?
 - [ ] obrador.ocho@gmail.com — ¿para Estudio 8?
 
 ### 8.3 Formulario
-- [ ] ¿El formulario actual (redirige a WhatsApp) está bien o preferís que enviemos los datos a un email?
+- [ ] ¿El formulario actual (redirige a Messaging) está bien o preferís que enviemos los datos a un email?
 - [ ] ¿Querés recibir consultas también por Instagram DM?
 
 ---
@@ -286,7 +286,7 @@ De todo lo anterior, **¿qué es lo más urgente para vos?**
 - [ ] Revisé qué fotos tengo disponibles de mis murales
 - [ ] Pensé qué secciones nuevas me gustaría agregar
 - [ ] Elegí la paleta de colores que prefiero
-- [ ] Decidí el número de WhatsApp correcto
+- [ ] Decidí el número de Messaging correcto
 - [ ] Marqué la prioridad de cada cosa
 
 ---
@@ -295,5 +295,5 @@ De todo lo anterior, **¿qué es lo más urgente para vos?**
 
 Mandá las respuestas por el medio que prefieras:
 - **Email:** weissvanderpol.ivan@gmail.com
-- **WhatsApp:** +595 981 324 569
+- **Messaging:** +595 981 324 569
 - O directamente edito este archivo si querés respuestas rápidas

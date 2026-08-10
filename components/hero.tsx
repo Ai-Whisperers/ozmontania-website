@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import es from '@/content/es.json'
-import { getWhatsAppUrl } from '@/lib/whatsapp'
+import { getMessagingUrl } from '@/lib/messaging'
 import type { SiteContent } from '@/types/content'
 
 const content = es as unknown as SiteContent

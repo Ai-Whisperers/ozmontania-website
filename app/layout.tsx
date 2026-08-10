@@ -3,7 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { Header } from "@ai-whisperers/ui-extras/header"
 import { Footer } from "@ai-whisperers/ui-extras/footer"
-import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
+import { MessagingFloat } from "@ai-whisperers/messaging"
 import es from '@/content/es.json'
 import type { SiteContent } from '@/types/content'
 
@@ -47,7 +47,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <WhatsAppFloat />
+        <MessagingFloat />
       </body>
     </html>
   )

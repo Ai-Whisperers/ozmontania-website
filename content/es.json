@@ -3,7 +3,7 @@
     "title": "Oz Montanía",
     "description": "Artista visual, muralista e ilustrador paraguayo",
     "url": "https://ozmontania.paragu-ai.com",
-    "whatsapp": "595981234567",
+    "messaging": "595981234567",
     "instagram": "@ozmontania",
     "instagram_url": "https://instagram.com/ozmontania",
     "facebook": "pyrotaurus",
@@ -502,7 +502,7 @@
   "tienda": {
     "title": "Tienda",
     "description": "Prints de edición limitada y merch oficial de Oz Montanía",
-    "whatsapp_order": true,
+    "messaging_order": true,
     "items": [
       {
         "id": "print-raiz-y-barrio",
@@ -615,9 +615,9 @@
   "contacto": {
     "title": "Contacto",
     "subtitle": "¿Querés un mural? ¿Una ilustración? ¿Una colaboración?",
-    "description": "Completá el formulario o escribime directamente por WhatsApp. Para proyectos comerciales, presupuestos y colaboraciones.",
-    "whatsapp_message": "Hola Oz! Vi tu trabajo en ozmontania.com y me interesa cotizar un proyecto.",
-    "whatsapp_label": "Escribime por WhatsApp",
+    "description": "Completá el formulario o escribime directamente por Messaging. Para proyectos comerciales, presupuestos y colaboraciones.",
+    "messaging_message": "Hola Oz! Vi tu trabajo en ozmontania.com y me interesa cotizar un proyecto.",
+    "messaging_label": "Escribime por Messaging",
     "form": {
       "name_label": "Nombre",
       "email_label": "Email",

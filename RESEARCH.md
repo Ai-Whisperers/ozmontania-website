@@ -95,4 +95,4 @@ Toronto, San Francisco, Los Angeles, Miami, Bogotá, Cartagena, Dominican Republ
 7. Zero real images
 8. No CI/CD
 9. No SEO structure
-10. Placeholder WhatsApp number
+10. Placeholder Messaging number

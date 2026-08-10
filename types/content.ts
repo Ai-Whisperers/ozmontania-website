@@ -4,7 +4,7 @@ export interface SiteConfig {
   title: string
   description: string
   url: string
-  whatsapp: string
+  messaging: string
   instagram: string
   instagram_url: string
   facebook: string
@@ -134,7 +134,7 @@ export interface ShopItem {
 export interface TiendaConfig {
   title: string
   description: string
-  whatsapp_order: boolean
+  messaging_order: boolean
   items: ShopItem[]
 }
 
@@ -172,8 +172,8 @@ export interface ContactoConfig {
   title: string
   subtitle: string
   description: string
-  whatsapp_message: string
-  whatsapp_label: string
+  messaging_message: string
+  messaging_label: string
   form: ContactFormConfig
 }
 
