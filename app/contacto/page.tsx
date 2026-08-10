@@ -1,13 +1,13 @@
 'use client'
 
 import es from '@/content/es.json'
-import { getWhatsAppUrl } from '@/lib/whatsapp'
+import { getMessagingUrl } from '@/lib/messaging'
 import { useState } from 'react'
 
 export default function ContactoPage() {
   const form = es.contacto.form as any
   const [submitted, setSubmitted] = useState(false)
-  const waUrl = getWhatsAppUrl(es.contacto.whatsapp_message)
+  const waUrl = getMessagingUrl(es.contacto.messaging_message)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -20,7 +20,7 @@ export default function ContactoPage() {
     const budget = data.get('budget') as string
     const message = data.get('message') as string
     const waMsg = `Hola Oz! Soy ${name} (${email}, ${phone}). \nTipo: ${projectType}\nPresupuesto: ${budget}\nMensaje: ${message}`
-    window.open(getWhatsAppUrl(waMsg), '_blank')
+    window.open(getMessagingUrl(waMsg), '_blank')
     setSubmitted(true)
   }
 
@@ -43,7 +43,7 @@ export default function ContactoPage() {
                 <div className="glass-panel p-6 sm:p-10 text-center">
                   <div className="text-3xl sm:text-4xl mb-4">✅</div>
                   <h3 className="text-lg sm:text-xl font-serif font-bold mb-2">¡Mensaje listo!</h3>
-                  <p className="text-zinc-400 text-sm mb-6">Se abrió WhatsApp para que envíes el mensaje. Te respondemos a la brevedad.</p>
+                  <p className="text-zinc-400 text-sm mb-6">Se abrió Messaging para que envíes el mensaje. Te respondemos a la brevedad.</p>
                   <button onClick={() => setSubmitted(false)} className="btn-outline text-sm">
                     Enviar otro mensaje
                   </button>
@@ -88,7 +88,7 @@ export default function ContactoPage() {
                     {form.submit_label}
                   </button>
                   <p className="text-center text-zinc-600 text-[10px] sm:text-xs">
-                    Al enviar, se abrirá WhatsApp con tu mensaje pre-llenado. No almacenamos tus datos.
+                    Al enviar, se abrirá Messaging con tu mensaje pre-llenado. No almacenamos tus datos.
                   </p>
                 </form>
               )}
@@ -102,7 +102,7 @@ export default function ContactoPage() {
                   <a href={waUrl} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-3 text-zinc-300 hover:text-amber-400 transition-colors text-sm">
                     <span className="text-green-500 text-base">💬</span>
-                    WhatsApp
+                    Messaging
                   </a>
                   <a href={`mailto:${es.site.email}`}
                     className="flex items-center gap-3 text-zinc-300 hover:text-amber-400 transition-colors text-sm">

@@ -14,7 +14,7 @@
     "@ai-whisperers/auth": "^0.2.0",
     "@ai-whisperers/seo": "^0.2.1",
     "@ai-whisperers/i18n": "^0.2.0",
-    "@ai-whisperers/whatsapp": "^0.3.0",
+    "@ai-whisperers/messaging": "^0.3.0",
     "@ai-whisperers/ui-extras": "^0.3.0",
     "@ai-whisperers/sections": "^0.1.0",
     "@ai-whisperers/content": "^0.3.0",

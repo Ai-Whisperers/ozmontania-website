@@ -10,7 +10,7 @@
 Home, Biografía, Obra, Obra/[slug], Blog, Blog/[slug], Murales, Prensa, Tienda, Contacto
 
 ## Components
-featured-works, footer, header, hero, whatsapp-float, animations/
+featured-works, footer, header, hero, messaging-float, animations/
 
 ## Content
 Bilingual: content/es.json (20KB) + content/en.json (19KB)
@@ -19,4 +19,4 @@ Bilingual: content/es.json (20KB) + content/en.json (19KB)
 npm run build && docker build -t ozmontania:prod . && docker stack deploy -c docker-compose.yml ozmontania
 
 ## Critical Patterns
-Bilingual (ES/EN). Image-heavy gallery. No e-commerce. WhatsApp commissions. Needs sitemap+robots.
+Bilingual (ES/EN). Image-heavy gallery. No e-commerce. Messaging commissions. Needs sitemap+robots.

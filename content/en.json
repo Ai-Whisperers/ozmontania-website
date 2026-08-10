@@ -3,7 +3,7 @@
     "title": "Oz Montanía",
     "description": "Paraguayan visual artist, muralist and illustrator",
     "url": "https://ozmontania.paragu-ai.com",
-    "whatsapp": "595991501444",
+    "messaging": "595991501444",
     "instagram": "@ozmontania",
     "instagram_url": "https://instagram.com/ozmontania",
     "facebook": "pyrotaurus",
@@ -502,7 +502,7 @@
   "tienda": {
     "title": "Shop",
     "description": "Limited edition prints and official Oz Montanía merchandise",
-    "whatsapp_order": true,
+    "messaging_order": true,
     "items": [
       {
         "id": "print-raiz-y-barrio",
@@ -615,9 +615,9 @@
   "contacto": {
     "title": "Contact",
     "subtitle": "Want a mural? An illustration? A collaboration?",
-    "description": "Fill out the form or write me directly on WhatsApp. For commercial projects, quotes and collaborations.",
-    "whatsapp_message": "Hi Oz! I saw your work at ozmontania.com and I'm interested in getting a quote for a project.",
-    "whatsapp_label": "Message me on WhatsApp",
+    "description": "Fill out the form or write me directly on Messaging. For commercial projects, quotes and collaborations.",
+    "messaging_message": "Hi Oz! I saw your work at ozmontania.com and I'm interested in getting a quote for a project.",
+    "messaging_label": "Message me on Messaging",
     "form": {
       "name_label": "Name",
       "email_label": "Email",
